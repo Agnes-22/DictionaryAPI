@@ -1,0 +1,192 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import requests
+response = requests.get('https://www.dictionaryapi.com/api/v3/references/collegiate/json/gold?key=a46d8dde-d4b9-4f1e-bf3f-62a5a0d6ea32')
+
+print(response.text)
+print(response.url)
+
+
+# In[3]:
+
+
+import json
+python_data = json.loads(response.text)
+print(type(python_data))
+
+
+# In[16]:
+
+
+def_et = python_data
+print(def_et)
+print(type(def_et))
+
+
+# In[4]:
+
+
+def_et1 = python_data[0]
+print(def_et)
+print(type(def_et))
+
+
+# In[5]:
+
+
+def_et1 = python_data[1]
+print(def_et1)
+
+
+# In[6]:
+
+
+def_et2 = python_data[2]
+print(def_et2)
+
+
+# In[8]:
+
+
+def_et3 = python_data[3]
+print(def_et3)
+
+
+# In[9]:
+
+
+def_et4 = python_data[4]
+print(def_et4)
+
+
+# In[10]:
+
+
+def_et5 = python_data[5]
+print(def_et5)
+
+
+# In[11]:
+
+
+def_et6 = python_data[6]
+print(def_et6)
+
+
+# In[12]:
+
+
+def_et7 = python_data[7]
+print(def_et7)
+
+
+# In[13]:
+
+
+def_et8 = python_data[8]
+print(def_et8)
+
+
+# In[14]:
+
+
+def_et9 = python_data[9]
+print(def_et9)
+
+
+# In[58]:
+
+
+only_meta1 = def_et[1]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold as record: ',only_meta1)
+#print(type(only_meta))
+
+
+# In[60]:
+
+
+only_meta2 = def_et[2]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold coast: ',only_meta2)
+
+
+
+#print('Gold Coast words: ',only_meta)
+#print(type(only_meta))
+
+
+# In[63]:
+
+
+only_meta3 = def_et[3]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold Digger: ',only_meta3)
+
+
+
+# In[65]:
+
+
+only_meta4 = def_et[4]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold-filled: ',only_meta4)
+
+
+# In[70]:
+
+
+only_meta5 = def_et[5]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold Leaf: ',only_meta5)
+
+
+stem5 = def_et[5]['meta']['stems']
+print('Gold leaf: ',stem5)
+#print(type(only_meta))
+
+
+# In[78]:
+
+
+only_meta6 = def_et[6]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold Mine: ',only_meta6)
+
+
+# In[77]:
+
+
+only_meta7 = def_et[7]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold of Pleasure: ',only_meta7)
+
+
+# In[80]:
+
+
+only_meta8 = def_et[8]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold Record: ',only_meta8)
+
+#only_meta = def_et[8]['meta']['stems']
+#print('Gold Record: ',only_meta)
+
+
+# In[82]:
+
+
+only_meta9 = def_et[9]['def'][0]['sseq'][0][0][1]['dt'][0][1]
+print('Gold Rush: ',only_meta9)
+
+#only_meta = def_et[9]['meta']['stems']
+#print('Gold Rush: ',only_meta)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
